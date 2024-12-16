@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #3f0000; /* Light background for contrast */
+      color: #333;
+      overflow: hidden; /* Prevents scrolling during animation */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Fullscreen Container for Desktop */
+    .menu-fullscreen {
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      animation: slideIn 1.2s ease-out; /* Smooth slide-in animation */
+    }
+
+    /* Card Layout for Mobile */
+    .menu-card {
+      width: 90%;
+      max-width: 800px;
+      height: 90vh;
+      background-color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* PDF Viewer Styling */
+    .menu-fullscreen embed,
+    .menu-card embed {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Back Button Styling */
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #ff6b6b; /* Red button */
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 1000; /* Ensures it stays on top */
+    }
+
+    .back-button:hover {
+      background-color: #d04545;
+    }
+
+    /* Slide-in Animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%); /* Starts off-screen */
+      }
+      to {
+        transform: translateX(0); /* Slides into view */
+      }
+    }
+
+    /* Media Query for Mobile View */
+    @media (max-width: 768px) {
+      .menu-fullscreen {
+        display: none; /* Hides fullscreen layout */
+      }
+
+      .menu-card {
+        display: flex; /* Displays the card layout for mobile */
+      }
+    }
+
+    /* Media Query for Desktop View */
+    @media (min-width: 769px) {
+      .menu-card {
+        display: none; /* Hides card layout */
+      }
+
+      .menu-fullscreen {
+        display: flex; /* Displays fullscreen layout */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Back Button -->
+  <a href="javascript:history.back()" class="back-button">Back</a>
+
+  <!-- Fullscreen View for Desktop -->
+  <div class="menu-fullscreen">
+    <embed src="/img/menu/menuMD.pdf" type="application/pdf">
+  </div>
+
+  <!-- Card View for Mobile -->
+  <div class="menu-card">
+    <embed src="/img/menu/menuMD.pdf" type="application/pdf">
+  </div>
+</body>
+</html>

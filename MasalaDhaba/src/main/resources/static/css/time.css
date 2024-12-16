@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1b292;
+    color: #333;
+}
+
+/* Back Button Styling */
+.back-button-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #980303;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Timetable Styling */
+.timetable-container {
+    max-width: 800px;
+    margin: 80px auto 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th,
+.timetable td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #000000;
+}
+
+.timetable th {
+    background-color: #790000;
+    color: #fff;
+}
+
+
+
+.timetable tr:hover {
+    background-color: #3d0000;
+    color: #fff;
+}
+
+.timetable td {
+    font-size: 16px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .timetable th, .timetable td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timetable-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .timetable th, .timetable td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .back-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
