@@ -26,7 +26,8 @@
     <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+   <link rel="stylesheet" type="text/css" href="/css/style.css"> 
+<!--  <link rel="stylesheet" type="text/css" href="./style.css">-->
   </head>
 
   <body id="top">
@@ -55,21 +56,22 @@
             src="/img/logofull.png"
             width="230"
             height="90"
-            alt="Grilli - Home"
+            alt="- Home"
           />
         </a>
 
         <nav class="navbar" data-navbar>
           <button class="close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            <img src="img/backword.png" alt="Close" aria-hidden="true">
           </button>
+          
 
           <a href="#" class="logo">
             <img
               src="/img/logofull.png"
-              width="160"
-              height="50"
-              alt="Grilli - Home"
+              width="230"
+              height="90"
+              alt="- Home"
             />
           </a>
 
@@ -83,14 +85,6 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#menu" class="navbar-link">
-
-
-                <span class="span">Menus</span>
-              </a>
-            </li>
-
-            <li class="navbar-item">
               <a href="#about" class="navbar-link">
 
                 <span class="span">About Us</span>
@@ -98,10 +92,26 @@
             </li>
 
             <li class="navbar-item">
+              <a href="#menu" class="navbar-link">
+
+
+                <span class="span">Menus</span>
+              </a>
+            </li>
+
+
+
+            <li class="navbar-item">
               <a href="/time" class="navbar-link">
 
 
                 <span class="span">Timings</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#reservation" class="navbar-link">
+                <span class="span">Reserve a table</span>
               </a>
             </li>
           </ul>
@@ -111,32 +121,22 @@
 
             <address class="body-4">
               217 Station Road Harrow, <br />
-              Harrow HA1 2TH England
+              Harrow HA1 2TH London
             </address>
 
-            <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
 
-            <a href="mailto:booking@grilli.com" class="body-4 sidebar-link"
-              >MasalaDhaba.com</a
+            <a href="#" class="body-4 contact-link"
+              >info@masaladhaba.co.uk</a
             >
-
 
             <p class="contact-label">Booking Request</p>
 
-            <a
-              href="tel: +44 7311 739511"
-              class="body-1 contact-number"
+            <a href="tel:+442035607407" class="body-4 contact-link"
+              >020 3560 7407</a
             >
-            02035607407
-            </a>
           </div>
         </nav>
 
-        <a href="#reservation" class="btn btn-secondary">
-          <span class="text text-1">Reserve A Table</span>
-
-          <span class="text text-2" aria-hidden="true">Reserve A Table</span>
-        </a>
 
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <span class="line line-1"></span>
@@ -156,10 +156,12 @@
 
       <section class="hero text-center" aria-label="home" id="home">
         <ul class="hero-slider" data-hero-slider>
-          <li class="slider-item active" style="background-image: url('/img/homer1.jpg');"></li>
+          <li class="slider-item active" style="background-image: url('/img/homedosa.jpg');"></li>
+          <li class="slider-item" style="background-image: url('/img/kabhab.jpg');"></li>
+          <li class="slider-item" style="background-image: url('/img/briyani.jpg');"></li>
           <li class="slider-item" style="background-image: url('/img/homer2.jpg');"></li>
-          <li class="slider-item" style="background-image: url('/img/homer3.jpg');"></li>
-          <li class="slider-item" style="background-image: url('/img/homer4.jpg');"></li>
+          <li class="slider-item" style="background-image: url('/img/ram.jpg');"></li>
+          <li class="slider-item" style="background-image: url('/img/wine.jpg');"></li>
         </ul>
       
         <h1 class="display-1 hero-title slider-reveal">Masala dhaba</h1>
@@ -178,13 +180,11 @@
             <p class="section-subtitle label-2">Flavors of India</p>
 
             <h2 class="headline-1 section-title">
-              We invite you to enjoy an exceptional meal
+              We invite you to experience the true essence of Indian flavors in every bite.
             </h2>
 
             <p class="section-text">
-              Whether you’re here for a casual gathering or a special
-              celebration, our menu is designed to delight your senses and offer
-              something for every palate.
+              Whether it’s a casual meal or a festive celebration, our menu brings flavors of India to delight every plate.
             </p>
 
             <ul class="grid-list">
@@ -211,7 +211,7 @@
                       <a href="#">Breakfast</a>
                     </h3>
 
-                    <a href="/menu" class="btn-text label-2"
+                    <a href="/breakfast" class="btn-text label-2"
                       >View Menu</a
                     >
                   </div>
@@ -241,7 +241,7 @@
                       <a href="#">Appetizers</a>
                     </h3>
 
-                    <a href="/menu" class="btn-text label-2"
+                    <a href="/lunch" class="btn-text label-2"
                       >View Menu</a
                     >
                   </div>
@@ -256,7 +256,7 @@
                       style="--width: 285; --height: 336"
                     >
                       <img
-                        src="/img/oreoshake.jpg"
+                        src="/img/desserts.jpg"
                         width="285"
                         height="336"
                         loading="lazy"
@@ -268,10 +268,10 @@
 
                   <div class="card-content">
                     <h3 class="title-4 card-title">
-                      <a href="#">Drinks</a>
+                      <a href="#">Desserts</a>
                     </h3>
 
-                    <a href="/menu" class="btn-text label-2"
+                    <a href="/desserts" class="btn-text label-2"
                       >View Menu</a
                     >
                   </div>
@@ -312,26 +312,15 @@
               <p class="label-2 section-subtitle" id="about-label">Our Story</p>
 
               <h2 class="headline-1 section-title">
-                Discover The All Your Favorite
+                Discover all your favorite
               </h2>
 
               <p class="section-text">
-                At MasalaDhaba, our mission is to bring the rich and diverse flavors of Indian cuisine to food lovers across the UK. From aromatic biryanis to tangy chaats, our menu celebrates India’s vibrant culinary heritage. Each dish is crafted with authentic recipes, fresh ingredients, and a passion for excellence. Whether you're enjoying a family meal or exploring new tastes, we promise an unforgettable dining experience. Join us at MasalaDhaba and savor the true essence of Indian flavors, one dish at a time.
+                Welcome to Masala Dhaba, a vibrant celebration of India’s culinary traditions, right in the heart of London. Inspired by the iconic Dhabas that of India, our restaurant blends rustic charm with the energy of city life to deliver an unforgettable dining experience.
+                Here, we believe food is more than just a meal—it’s a connection to culture, memories, and shared joy. Our menu is a tribute to India’s rich flavour's and honoured recipes, prepared with authentic spices, fresh ingredients, and a touch of love in every dish. From sizzling tandoori delights to indulgent curries and fragrant biryanis, each bite captures the essence of Indian hospitality and warmth.At Masala Dhaba, every meal is a story, and you are at the heart of it.
               </p>
 
-              <div class="contact-label">Book Through Call</div>
 
-              <a
-                href="tel:+804001234567"
-                class="body-1 contact-number"
-                >02035607407</a
-              >
-
-              <a href="#" class="btn btn-primary">
-                <span class="text text-1">Read More</span>
-
-                <span class="text text-2" aria-hidden="true">Read More</span>
-              </a>
             </div>
 
             <figure class="about-banner">
@@ -401,18 +390,10 @@
 
           <div class="special-dish-content bg-black-10">
             <div class="container">
-              <img
-                src="/img/good4.jpg"
-                width="28"
-                height="41"
-                loading="lazy"
-                alt="badge"
-                class="abs-img"
-              />
 
               <p class="section-subtitle label-2">Special Dish</p>
 
-              <h2 class="headline-1 section-title">Chicken Biryani</h2>
+              <h2 class="headline-1 section-title">Chicken Dum Biryani</h2>
 
               <p class="section-text">
                 Indulge in our signature Chicken Biryani, where tender chicken
@@ -429,13 +410,6 @@
                 <span class="span body-1">£ 7.95</span>
               </div>
 
-              <a href="/menu" class="btn btn-primary">
-                <span class="text text-1">View All Menu</span>
-
-                <span class="text text-2" aria-hidden="true"
-                  >View All Menu</span
-                >
-              </a>
             </div>
           </div>
           <img
@@ -514,7 +488,7 @@
                 <div>
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Medu Vada</a>
+                      <a href="#" class="card-title">Medu Vada 2pcs</a>
                     </h3>
       
                     <span class="span title-2">£ 4.95</span>
@@ -546,14 +520,14 @@
                 <div>
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Chicken Briyani</a>
+                      <a href="#" class="card-title">Chicken Dum Briyani</a>
                     </h3>
       
                     <span class="span title-2">£ 7.95</span>
                   </div>
       
                   <p class="card-text label-1">
-                    Savor our authentic Chicken Biryani—aromatic, flavorful, and a perfect blend of spices!
+                    Savor the rich flavors of Hyderabadi Dum Biryani—fragrant rice, tender chicken, and authentic spices in every bite!
                   </p>
                 </div>
               </div>
@@ -583,7 +557,7 @@
       
                     <span class="badge label-1"></span>
       
-                    <span class="span title-2">£ 7.95</span>
+                    <span class="span title-2">£ 6.95</span>
                   </div>
       
                   <p class="card-text label-1">
@@ -615,7 +589,7 @@
                       <a href="#" class="card-title">Paneer Tikka Masala</a>
                     </h3>
       
-                    <span class="span title-2">£ 7.95</span>
+                    <span class="span title-2">£ 7.45</span>
                   </div>
       
                   <p class="card-text label-1">
@@ -716,10 +690,10 @@
                 <div>
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Rasmalai</a>
+                      <a href="#" class="card-title">Rasmalai 2pcs</a>
                     </h3>
       
-                    <span class="span title-2">£ 3.95</span>
+                    <span class="span title-2">£ 4.45</span>
                   </div>
       
                   <p class="card-text label-1">
@@ -770,7 +744,7 @@
             <div class="quote">”</div>
 
             <p class="headline-2 testi-text">
-              Experience the true essence of India—flavors rich in history, crafted with care, and served with love.
+              Experience the true essence of India—Rich history of flavors , carefully crafted and served with love.
             </p>
 
             <div class="wrapper">
@@ -781,6 +755,7 @@
         <section id="reservation">
           <div class="container">
             <div class="form reservation-form bg-black-10">
+              <!-- Reservation Form -->
               <form
                 action="/reservations/submit"
                 method="post"
@@ -789,8 +764,8 @@
               >
                 <h2 class="headline-1 text-center">Online Reservation</h2>
                 <p class="form-text text-center">
-                  Booking request
-                  <a href="tel:+88123123456" class="link">02035607407</a>
+                 Call for booking request
+                  <a href="tel:+442035607407" class="body-1 contact-number">020 3560 7407</a>
                   or fill out the order form
                 </p>
         
@@ -817,6 +792,8 @@
                   <div class="icon-wrapper">
                     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
                     <select name="noOfPersons" class="input-field" required>
+                      <option value="" disabled selected>No. of Persons</option>
+                      <!-- Condensed options -->
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -855,7 +832,7 @@
                       <option value="36">36</option>
                       <option value="37">37</option>
                       <option value="38">38</option>
-                      <!-- Add more options as needed -->
+                      
                     </select>
                     <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                   </div>
@@ -868,25 +845,28 @@
                       class="input-field"
                       required
                     />
-                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                   </div>
         
                   <div class="icon-wrapper">
                     <ion-icon name="fast-food-outline" aria-hidden="true"></ion-icon>
                     <select name="mealType" class="input-field" required>
+                      <option value="" disabled selected>Meal Type</option>
                       <option value="breakfast">Breakfast</option>
                       <option value="lunch">Lunch</option>
                       <option value="dinner">Dinner</option>
                     </select>
-                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                   </div>
         
                   <div class="icon-wrapper">
                     <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                     <select name="timeSlot" class="input-field" required>
-                      <!-- Time options will be dynamically populated -->
+                      <option value="" disabled selected>Preferred Time</option>
+                      <option value="9:00am">9:00 AM</option>
+                      <option value="12:00pm">12:00 PM</option>
+                      <option value="3:00pm">3:00 PM</option>
+                      <option value="6:00pm">6:00 PM</option>
+                      <option value="8:00pm">8:00 PM</option>
                     </select>
-                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                   </div>
                 </div>
         
@@ -901,35 +881,10 @@
                   <span class="text text-1">Reserve a Table</span>
                   <span class="text text-2" aria-hidden="true">Reserve a Table</span>
                 </button>
-				<div id="reservationFormLoader" style="display: none;"></div>
-                <!-- Placeholder for success or failure message -->
+        
+                <div id="reservationFormLoader" style="display: none;"></div>
                 <p id="formMessage" class="form-message text-center"></p>
               </form>
-        
-              <div class="form-right text-center">
-                <h2 class="headline-1 text-center">Contact Us</h2>
-                <p class="contact-label">Booking Request</p>
-                <a href="tel:+88123123456" class="body-1 contact-number">02035607407</a>
-                <p class="contact-label">Breakfast</p>
-                <p class="body-4">
-                  Monday to Sunday <br />
-                  9.00 am - 11.30 am
-                </p>
-                <p class="contact-label">Lunch Time</p>
-                <p class="body-4">
-                  Monday to Sunday <br />
-                  12.00 pm - 3.00 pm
-                </p>
-                <p class="contact-label">Dinner Time</p>
-                <p class="body-4">
-                  Monday to friday <br />
-                  05.00 pm - 10.00 pm
-                </p>
-                <p class="body-4">
-                  Saturday & Sunday <br />
-                  05.00 pm - 10.30 pm
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -1019,7 +974,7 @@
                   <h3 class="title-2 card-title">Diversity in Menu</h3>
 
                   <p class="label-1 card-text">
-                    Wide variety of indian cuisines and dishes.
+                    Wide variety of indian cuisines.
                   </p>
                 </div>
               </li>
@@ -1069,17 +1024,17 @@
             </a>
 
             <address class="body-4">
-              217 Station Road Harrow, Harrow HA1 2TH England
+              217 Station Road Harrow, Harrow HA1 2TH London
             </address>
 
-            <a href="mailto:booking@grilli.com" class="body-4 contact-link"
+            <a href="#" class="body-4 contact-link"
               >info@masaladhaba.co.uk</a
             >
 
-            <a href="tel:+88123123456" class="body-4 contact-link"
-              >Booking Request : 02035607407</a
-            >
-
+            <a href="tel:+442035607407" class="body-4 contact-link" style="white-space: nowrap;">
+              Booking / Order Request : <span style="font-weight: bold;">020 3560 7407</span>
+            </a>
+            
 
             <div class="wrapper">
             </div>
@@ -1113,7 +1068,7 @@
             </li>
 
             <li>
-              <a href="#" class="label-2 footer-link"
+              <a href="#about" class="label-2 footer-link"
                 >About Us</a
               >
             </li>
@@ -1128,7 +1083,7 @@
 
           <ul class="footer-list">
             <li>
-              <a href="https://www.instagram.com/masaladhabalondon/profilecard/?igsh=MXRtYXQ3amU3ODRxcg==" class="label-2 footer-link"
+              <a href="https://www.instagram.com/masaladhabalondon/?igsh=MXRtYXQ3amU3ODRxcg%3D%3D" class="label-2 footer-link"
                 >Instagram</a
               >
             </li>
@@ -1170,7 +1125,8 @@
 
   -->
 
-    <script src="/js/script.js"></script>
+     <script src="/js/script.js"></script> 
+<!--    <script src="./script.js"></script>-->
 
     <!-- 
     - ionicon link

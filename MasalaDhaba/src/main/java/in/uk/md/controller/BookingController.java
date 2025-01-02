@@ -53,4 +53,19 @@ public class BookingController {
 		return "map";
 	}
 	
+	@GetMapping("/breakfast")
+	public String showBf() {
+		return "breakfast";
+	}
+	
+	@GetMapping("/lunch")
+	public String showLunch() {
+		return "lunch";
+	}
+	
+	@GetMapping("/desserts")
+	public String showDesserts() {
+		return "desserts";
+	}
+	
 }

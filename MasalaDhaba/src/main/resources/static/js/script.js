@@ -154,7 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 // Get references to the mealType, timeSlot, and bookingDate elements
 const mealTypeSelect = document.querySelector('select[name="mealType"]');
 const timeSlotSelect = document.querySelector('select[name="timeSlot"]');
@@ -173,13 +172,13 @@ function updateTimeSlots() {
   } else if (mealType === "lunch") {
     timeOptions = ["12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00"];
   } else if (mealType === "dinner") {
-    // Determine dinner timings based on the day of the week
-    if (dayOfWeek === 0 || dayOfWeek === 6) { // Saturday and Sunday
+    // Dinner timings based on the day of the week
+    if (dayOfWeek === 5 || dayOfWeek === 6) { // Friday and Saturday
       timeOptions = [
         "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", 
         "20:30", "21:00", "21:30", "22:00", "22:30"
       ];
-    } else { // Monday to Friday
+    } else { // Sunday to Thursday
       timeOptions = [
         "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", 
         "20:30", "21:00", "21:30", "22:00"
@@ -222,6 +221,7 @@ bookingDateInput.addEventListener('change', updateTimeSlots);
 
 // Call updateTimeSlots initially to set the default options
 updateTimeSlots();
+
 
 
 /*const form = document.getElementById('reservationForm');
@@ -277,16 +277,17 @@ form.addEventListener('submit', async (event) => {
       form.reset();
     } else {
       // Display failure message
-      formMessage.textContent = 'Failed booking. Please try again.';
+      const errorData = await response.json();
+      formMessage.textContent = errorData.message || 'Failed booking. Please try again.';
       formMessage.style.color = 'red';
     }
   } catch (error) {
     // Handle network or other errors
     formMessage.textContent = 'An error occurred. Please try again later.';
     formMessage.style.color = 'red';
+    console.error('Reservation Error:', error);
   } finally {
     // Hide loader after response
     loader.style.display = 'none';
   }
 });
-

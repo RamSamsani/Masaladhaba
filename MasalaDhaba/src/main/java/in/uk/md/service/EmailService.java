@@ -30,7 +30,7 @@ public class EmailService {
                                       "Booking Date: %s\n" +
                                       "Time Slot: %s\n", 
                                       customerName, email, noOfPersons, bookingDate, timeSlot);
-        sendEmail("samsaniramsunil@gmail.com", subject, message);  // Replace with your admin email
+        sendEmail("bookingsatmd@gmail.com", subject, message);  // Replace with your admin email
     }
 
 }
